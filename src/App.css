@@ -79,9 +79,17 @@ footer {
   width:100%
 }
 
-.tableItem{
+.tablePlace{
+  margin-left: 2rem;
+  margin-right: 2rem
+}
+
+#tableItem{
   display:flex;
   justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem
+
 }
 
 #headshot{
