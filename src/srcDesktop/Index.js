@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
 import Homepage from "./Welcome/Index.js"
-import CompanyInfo from "./Team/Index.js";
-import Consulting from "./Services/Index.js";
+import Practice from "./Practice/Index";
+import Services from "./Services/Index";
+import MoreInfo from "./MoreInfo/Index";
+import Contact from "./Contact/Index";
 
 
 export default class Desktop extends React.Component {
@@ -15,8 +17,10 @@ export default class Desktop extends React.Component {
           <div className="App-content">
             <Header />
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/about" component={CompanyInfo} />
-            <Route exact path="/services" component={Consulting} />
+            <Route exact path="/my-practice" component={Practice} />
+            <Route exact path="/services" component={Services} />
+            <Route exact path="/more-info" component={MoreInfo} />
+            <Route exact path="/contact" component={Contact} />
             <Footer />
           </div>
       </Router>

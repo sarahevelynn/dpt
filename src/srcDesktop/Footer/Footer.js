@@ -7,7 +7,7 @@ export default function Footer() {
       <p id="copy">&copy; 2018, DeGrandis Physical Therapy, LLC</p>
       <div id="social">
         <a href={"mailto:chrisdegrandispt@gmail.com"}>
-          <img src={email} className="emailPhoto" alt="email me" />
+          <img src={email} id="emailPhoto" alt="email me" />
         </a>
       </div>
     </footer>

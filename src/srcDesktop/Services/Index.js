@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Profiles } from "./Profiles.js";
 import { Clients } from "./Clients.js";
 
-export default class Consulting extends React.Component {
+export default class Services extends React.Component {
   render() {
     return (
       <div>
