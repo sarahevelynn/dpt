@@ -1,19 +1,33 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import { Profiles } from "./Profiles.js";
-import { Clients } from "./Clients.js";
+import OneOnOne from "./OneOnOne";
+import InitialEval from "./InitialEval";
+import DryNeedle from "./DryNeedle";
+import Payment from "./Payment";
+import HSA from "./HSA";
 
 export default class Services extends React.Component {
   render() {
     return (
-      <div>
-        <Profiles />
-        <Clients />
-        <hr id="outsideLine" />
-        <hr id="insideLine" />
-        <hr id="outsideLine" />
-      </div>
+        <table id="serviceTable">
+          <tbody>
+            <tr>
+              <OneOnOne />
+            </tr>
+            <tr>
+              <InitialEval />
+            </tr>
+            <tr>
+              <DryNeedle />
+            </tr>
+            <tr>
+              <Payment />
+            </tr>
+            <tr>
+              <HSA />
+            </tr>
+          </tbody>
+        </table>
     );
   }
 }

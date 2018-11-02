@@ -17,7 +17,7 @@ export default class CFMT extends React.Component {
           required courses. Certification is awarded to those candidates who
           demonstrate proficiency in all required courses.
         </p>
-        <a href={"https://twitter.com/5280startup"} target="_blank">
+        <a href={"http://www.instituteofphysicalart.com/index.php/certification/cfmt.html"} target="_blank">
           <div className="moreInfoButton">
             <h3>Learn More About CFMT</h3>
           </div>

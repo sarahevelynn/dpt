@@ -114,6 +114,17 @@ footer {
   border-radius: 1rem
 }
 
+#moreInfoButton1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  font-size: 1rem;
+  background-color: #1bae91;
+  color:white;
+  border-radius: 1rem
+}
+
 #credentials{
   display:flex;
   justify-content: space-between;
@@ -121,4 +132,31 @@ footer {
   flex-direction: column;
   padding-left: 10rem;
   padding-right: 10rem
+}
+
+#serviceTable{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 3rem
+}
+
+.service {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: right;
+}
+
+.serviceTitle{
+  color: #24344b;
+  width:30rem;
+  margin-right: 1rem;
+  padding-right: 2rem
+}
+
+.serviceInfo{
+  color: #24344b;
+  width:30rem;
+  text-align: left;
 }
