@@ -190,3 +190,11 @@ footer {
 .formButton{
   color:white
 }
+
+.moreInfoLinks{
+  color: #22435e;
+}
+
+.moreInfoLinks:hover{
+  color: #1bae91;
+}
