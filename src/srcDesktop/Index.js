@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer.js";
 import Homepage from "./Welcome/Index.js"
 import Practice from "./Practice/Index";
 import Services from "./Services/Index";
+import NewPatients from "./NewPatients/Index";
 import MoreInfo from "./MoreInfo/Index";
 import Contact from "./Contact/Index";
 
@@ -19,6 +20,7 @@ export default class Desktop extends React.Component {
             <Route exact path="/" component={Homepage} />
             <Route exact path="/my-practice" component={Practice} />
             <Route exact path="/services" component={Services} />
+            <Route exact path="/new-patients" component={NewPatients} />
             <Route exact path="/more-info" component={MoreInfo} />
             <Route exact path="/contact" component={Contact} />
             <Footer />

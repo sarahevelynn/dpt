@@ -168,3 +168,25 @@ footer {
   width:30rem;
   text-align: left;
 }
+
+#patients{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forms{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 1.5rem;
+  background-color: #1bae91;
+  border-radius: 1rem;
+  margin:2rem
+}
+
+.formButton{
+  color:white
+}
