@@ -198,3 +198,24 @@ footer {
 .moreInfoLinks:hover{
   color: #1bae91;
 }
+
+#message{
+  width: 30%;
+  height: 10rem
+}
+
+#submitButton{
+  height: 40px;
+font-size: 1.5rem;
+background-color: #1bae91;
+color: white;
+border-radius: 4px;
+}
+
+#submitButton:hover{
+  height: 40px;
+font-size: 1.5rem;
+background-color: white;
+color: #1bae91;
+border-radius: 4px;
+}

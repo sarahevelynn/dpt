@@ -82,30 +82,32 @@ export default class Contact extends React.Component {
         <h2> Or submit your message below</h2>
         <div id="contactForm">
           <form className="signupForm" onSubmit={this.addBasicInfo}>
-            <label htmlFor="signupName">First Name</label>
-            <input type="text" name="signupName" />
-            <label htmlFor="signupCoName">Last Name</label>
-            <input type="text" name="signupCoName" />
+            <label htmlFor="signupFName">First Name</label>
+            <input type="text" name="signupFName" />
+            <label htmlFor="signupLName">Last Name</label>
+            <input type="text" name="signupLName" />
             <br/>
             <label htmlFor="signupEmail">Your Email Adress</label>
             <input type="text" name="signupEmail" />
             <label htmlFor="signupPhone">Your Phone Number</label>
             <input type="text" name="signupPhone" />
-            <label htmlFor="signupPhone">Message</label>
-            <input type="text" name="signupPhone" />
+            <br />
+            <label htmlFor="signupMessage">Message</label>
+            <br />
+            <input id="message" type="text" name="signupMessage" />
 
             <br />
             {this.state.isLoading === true ? (
               <Loader
                 type="ThreeDots"
-                color="#c33539"
+                color="#22435e"
                 height="50"
                 width="100"
               />
             ) : (
               <p> {this.state.message} </p>
             )}
-            <input type="submit" className="submitButton" value="Submit" />
+            <input type="submit" id="submitButton" value="Submit" />
           </form>
         </div>
         <h2>
