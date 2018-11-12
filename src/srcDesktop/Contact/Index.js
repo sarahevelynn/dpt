@@ -16,16 +16,20 @@ export default class Contact extends React.Component {
     event.preventDefault();
     var data = new FormData(event.target);
     return {
-      signupName: data.get("signupName"),
-      signupEmail: data.get("signupEmail"),
+      signupFName: data.get("signupFName"),
+      signupLName: data.get("signupLName"),
       signupPhone: data.get("signupPhone"),
-      signupCoName: data.get("signupCoName"),
-      EmployeeNumber: data.get("EmployeeNumber")
+      signupEmail: data.get("signupEmail"),
+      signupMessage: data.get("signupMessage")
     };
   };
 
-  sendMessage = event => {
-    fetch("https://saveaway-email-server.herokuapp.com/freeGuide", {
+  addBasicInfo = event => {
+    const { history } = this.props;
+    this.setState({ isLoading: true });
+    event.preventDefault();
+    console.log(this.getBasicInfo(event));
+    fetch("https://degrandis-pt.herokuapp.com/contact", {
       method: "post",
       body: JSON.stringify(this.getBasicInfo(event)),
       headers: new Headers({
@@ -35,23 +39,7 @@ export default class Contact extends React.Component {
       .then(resp => resp.json())
       .then(resp => {
         this.response = resp.message;
-      });
-  };
-
-  addBasicInfo = event => {
-    const { history } = this.props;
-    this.setState({ isLoading: true });
-    event.preventDefault();
-    console.log(this.getBasicInfo(event));
-    fetch(baseURL + "guideRegistration", {
-      method: "post",
-      body: JSON.stringify(this.getBasicInfo(event)),
-      headers: new Headers({
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json"
       })
-    })
-      .then(this.sendMessage(event))
       .then(
         setTimeout(() => {
           this.setState({
@@ -73,8 +61,8 @@ export default class Contact extends React.Component {
   };
   render() {
     if (this.state.redirect === true) {
-    return <Redirect to="/Guide" />;
-  }
+      return <Redirect to="/Guide" />;
+    }
     return (
       <div>
         <h2> Please feel free to call me at: +1 (440) 213-0909</h2>
@@ -82,15 +70,17 @@ export default class Contact extends React.Component {
         <h2> Or submit your message below</h2>
         <div id="contactForm">
           <form className="signupForm" onSubmit={this.addBasicInfo}>
-            <label htmlFor="signupFName">First Name</label>
-            <input type="text" name="signupFName" />
-            <label htmlFor="signupLName">Last Name</label>
-            <input type="text" name="signupLName" />
-            <br/>
-            <label htmlFor="signupEmail">Your Email Adress</label>
-            <input type="text" name="signupEmail" />
-            <label htmlFor="signupPhone">Your Phone Number</label>
-            <input type="text" name="signupPhone" />
+            <label htmlFor="signupFName">First</label>
+            <input className="formInput" type="text" name="signupFName" />
+            <label htmlFor="signupLName">Last</label>
+            <input className="formInput" type="text" name="signupLName" />
+            <br />
+            <label htmlFor="signupEmail">Email</label>
+            <input className="formInput" type="text" name="signupEmail" />
+            <br />
+            <label htmlFor="signupPhone">Phone Number</label>
+            <input className="formInput" type="text" name="signupPhone" />
+            <br />
             <br />
             <label htmlFor="signupMessage">Message</label>
             <br />

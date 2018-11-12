@@ -3,7 +3,7 @@
 }
 
 header {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -11,39 +11,39 @@ header {
 
 #logo {
   height: 12rem;
-  padding:0.5rem
+  padding: 0.5rem;
 }
 
 #tagline {
   color: #3b5d7e;
   font-size: 3rem;
-  padding:0;
-  margin:0;
-  margin-right: 10rem
+  padding: 0;
+  margin: 0;
+  margin-right: 10rem;
 }
 
 #navBar {
-  margin-right: 4rem
+  margin-right: 4rem;
 }
 
 nav {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
 
-.navItem{
+.navItem {
   padding: 1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   background-color: #cccccc;
   border-radius: 2rem;
-  color: #22435e
+  color: #22435e;
 }
 
-.navItem:hover{
+.navItem:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   border-style: double;
@@ -53,169 +53,181 @@ nav {
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 p {
   font-size: 1.2rem;
-  line-height: 1.3rem
+  line-height: 1.3rem;
 }
 
 footer {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 2rem;
   padding-left: 5rem;
-  padding-right: 5rem
+  padding-right: 5rem;
 }
 
-#emailPhoto{
-  height:3rem
+#emailPhoto {
+  height: 3rem;
 }
 
 #flatirons {
-  width:100%
+  width: 100%;
 }
 
-.tablePlace{
+.tablePlace {
   margin-left: 2rem;
-  margin-right: 2rem
+  margin-right: 2rem;
 }
 
-#tableItem{
-  display:flex;
+#tableItem {
+  display: flex;
   justify-content: center;
   margin-left: 2rem;
-  margin-right: 2rem
-
+  margin-right: 2rem;
 }
 
-#headshot{
-  width:50%
+#headshot {
+  width: 50%;
 }
 
-.practiceSection{
-  display:flex;
+.practiceSection {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   padding-left: 10rem;
-  padding-right: 10rem
+  padding-right: 10rem;
 }
 
 .practiceTitle {
   font-size: 2.3rem;
-  color:#24344b
+  color: #24344b;
 }
 
-.moreInfoButton{
+.moreInfoButton {
   width: 16rem;
-  padding-left:0.8rem;
-  padding-right:0.8rem;
-  padding-top:0.2rem;
-  padding-bottom:0.2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   font-size: 1.2rem;
   background-color: #1bae91;
-  color:white;
-  border-radius: 1rem
+  color: white;
+  border-radius: 1rem;
 }
 
-#moreInfoButton1{
-  display:flex;
+#moreInfoButton1 {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 15rem;
   font-size: 1rem;
   background-color: #1bae91;
-  color:white;
-  border-radius: 1rem
+  color: white;
+  border-radius: 1rem;
 }
 
-#credentials{
-  display:flex;
+#credentials {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   padding-left: 10rem;
-  padding-right: 10rem
+  padding-right: 10rem;
 }
 
-#serviceTable{
-  display:flex;
+#serviceTable {
+  display: flex;
   justify-content: center;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 
 .service {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
   text-align: right;
 }
 
-.serviceTitle{
+.serviceTitle {
   color: #24344b;
-  width:30rem;
+  width: 30rem;
   margin-right: 1rem;
-  padding-right: 2rem
+  padding-right: 2rem;
 }
 
-.serviceInfo{
+.serviceInfo {
   color: #24344b;
-  width:30rem;
+  width: 30rem;
   text-align: left;
 }
 
-#patients{
-  display:flex;
+#patients {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.forms{
-  display:flex;
+.forms {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
   font-size: 1.5rem;
   background-color: #1bae91;
   border-radius: 1rem;
-  margin:2rem
+  margin: 2rem;
 }
 
-.formButton{
-  color:white
+.formButton {
+  color: white;
 }
 
-.moreInfoLinks{
+.moreInfoLinks {
   color: #22435e;
 }
 
-.moreInfoLinks:hover{
+.moreInfoLinks:hover {
   color: #1bae91;
 }
 
-#message{
-  width: 30%;
-  height: 10rem
+#contactForm {
+  font-size: 2rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#submitButton{
-  height: 40px;
-font-size: 1.5rem;
-background-color: #1bae91;
-color: white;
-border-radius: 4px;
+.formInput{
+  width:100%;
+  height:2rem;
+  margin-right: 1rem
 }
 
-#submitButton:hover{
+#message {
+  width: 100%;
+  height: 10rem;
+}
+
+#submitButton {
   height: 40px;
-font-size: 1.5rem;
-background-color: white;
-color: #1bae91;
-border-radius: 4px;
+  font-size: 1.5rem;
+  background-color: #1bae91;
+  color: white;
+  border-radius: 4px;
+}
+
+#submitButton:hover {
+  height: 40px;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #1bae91;
+  border-radius: 4px;
 }
