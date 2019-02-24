@@ -4,9 +4,10 @@ import email from "./assets/email.png";
 export default function Footer() {
   return (
     <footer>
-      <div>
-        <h4>Office Hours</h4>
-        <h4>
+      <div id="footerContent">
+      <div class="footerItem">
+        <h3>Office Hours</h3>
+        <h4 class="footerText">
           Hours depend on patient and therapist availability.
           <br />
           Inquire to schedule your initial evaluation
@@ -14,9 +15,10 @@ export default function Footer() {
           and future appointments.
         </h4>
       </div>
-      <div>
-        <h4>Location</h4>
-        <h4>777 29th Street, Suite 401
+      <div class="footerItem">
+        <h3>Location</h3>
+        <h4 class="footerText">
+        777 29th Street, Suite 401
         <br />
         Boulder, CO 80303</h4>
       </div>
@@ -25,8 +27,9 @@ export default function Footer() {
           <img src={email} id="emailPhoto" alt="email me" />
         </a>
       </div>
+      </div>
       <h4 id="copy">
-        &copy; 2018
+        &copy; 2019
         <br />
         DeGrandis Physical Therapy
       </h4>
