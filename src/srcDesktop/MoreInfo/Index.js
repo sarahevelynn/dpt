@@ -9,9 +9,11 @@ export default class MoreInfo extends React.Component {
   render() {
     return (
       <div>
+      <div id="infoBoxes">
       <Exercises />
       <Mobilizations />
       <Articles />
+      </div>
       <Videos />
       </div>
     );

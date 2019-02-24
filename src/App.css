@@ -190,8 +190,24 @@ footer {
   color: white;
 }
 
+#infoBoxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoBox{
+  width: 28%;
+  background-color: #5282b0;
+  color: white;
+  margin:1rem
+}
+
+.infoBox2{
+  width: 28%
+}
+
 .moreInfoLinks {
-  color: #22435e;
+  color: white;
 }
 
 .moreInfoLinks:hover {
