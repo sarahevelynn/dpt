@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+h2{
+  font-weight: 500;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -45,11 +49,12 @@ nav {
 }
 
 .navItem:hover {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-style: double;
-  border-color: #24344b;
-  border-width: 0.2rem;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #22435e;
+  border-radius: 2rem;
+  color: #cccccc;
 }
 
 a {
@@ -135,6 +140,21 @@ footer {
   background-color: #1bae91;
   color: white;
   border-radius: 1rem;
+  border-style: solid;
+
+}
+
+.moreInfoButton:hover {
+  width: 16rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #1bae91;
+  border-radius: 1rem;
+  border-style: dashed;
 }
 
 #moreInfoButton1 {
@@ -146,6 +166,19 @@ footer {
   background-color: #1bae91;
   color: white;
   border-radius: 1rem;
+  border-style: solid;
+}
+
+#moreInfoButton1:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  font-size: 1rem;
+  background-color: white;
+  color: #1bae91;
+  border-radius: 1rem;
+  border-style: dashed;
 }
 
 #credentials {
@@ -197,13 +230,32 @@ footer {
   align-items: center;
   width: 40%;
   font-size: 1.5rem;
+  color: #1bae91;
   background-color: #1bae91;
   border-radius: 1rem;
+  margin: 2rem;
+  border-style: solid;
+}
+
+.forms:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 1.5rem;
+  color: #1bae91;
+  background-color: white;
+  border-radius: 1rem;
+  border-style: dashed;
   margin: 2rem;
 }
 
 .formButton {
   color: white;
+}
+
+.formButton:hover {
+  color: #1bae91;
 }
 
 #infoBoxes {
