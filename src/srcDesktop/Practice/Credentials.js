@@ -18,14 +18,19 @@ export default class Credentials extends React.Component {
           Kaiser Foundation Rehabilitation Center, Vallejo, CA January 2015
         </h2>
         <h2>
-          Functional Dry Needling, Level 1,
-          <br />
-          Kinetacore Physical Therapy Education, Brighton, CO May 2016
-        </h2>
-        <h2>
           Certified Functional Manual Therapist (CFMT) with Honors,
           <br />
           Institute of Physical Art, Steamboat Springs, CO August 2016
+        </h2>
+        <h2>
+          Upledger CranioSacral Therapy, Levels 1 & 2
+          <br />
+          Various dates and locations
+        </h2>
+        <h2>
+          Functional Dry Needling, Level 1,
+          <br />
+          Kinetacore Physical Therapy Education, Brighton, CO May 2016
         </h2>
       </div>
     );

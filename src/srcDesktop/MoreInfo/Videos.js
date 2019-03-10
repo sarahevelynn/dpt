@@ -16,10 +16,10 @@ export default class Videos extends React.Component {
           <ReactPlayer url='https://www.youtube.com/watch?v=gwd-wLdIHjs&t=16s' />
         </div>
         <div className="moreInfoVideo">
-        <a href={"https://www.youtube.com/watch?annotation_id=annotation_1871262837&amp=&feature=iv&amp=&src_vid=YQm5RCz9Pxc&amp=&v=mB468Jh9aAY"} target="_blank">
-  <h3>TMJ Anatomy and Disc Displacement Animation</h3>      </a>
+        <a href={"https://www.youtube.com/watch?v=KLjgBLwH3Wc"} target="_blank">
+  <h3>Dr. Terry Wahls and The Wahls Protocol, Minding your Mitochondria:</h3>      </a>
 
-          <ReactPlayer url='https://www.youtube.com/watch?annotation_id=annotation_1871262837&amp=&feature=iv&amp=&src_vid=YQm5RCz9Pxc&amp=&v=mB468Jh9aAY' />
+          <ReactPlayer url='https://www.youtube.com/watch?v=KLjgBLwH3Wc' />
         </div>
         </div>
       </div>

@@ -6,14 +6,19 @@ export default class Articles extends React.Component {
     return (
       <div class="infoBox">
       <h1 className="practiceTitle">Articles</h1>
-      <a href={"https://www.verywellfit.com/dormant-butt-syndrome-4075025?utm_term=bouncex12&utm_campaign=todaysl&utm_medium=email&utm_source=cn_nl&utm_content=9531662"} target="_blank">
+      <a href={"http://online.liebertpub.com/doi/full/10.1089/acu.2017.1222"} target="_blank">
         <div className="moreInfoLinks">
-          <h3>“Dormant Butt Syndrome” Is It Causing Your Hip and Knee Pain?</h3>
+          <h3>Craniosacral Therapy and Visceral Manipulation: A New Treatment Intervention for Concussion Recovery:</h3>
         </div>
       </a>
-      <a href={"https://wexnermedical.osu.edu/mediaroom/pressreleaselisting/dormant-butt-syndrome-mmr"} target="_blank">
+      <a href={"https://www.npr.org/sections/health-shots/2018/02/26/587735283/lost-art-of-bending-over-how-other-cultures-spare-their-spines?utm_campaign=storyshare&utm_source=facebook.com&utm_medium=social"} target="_blank">
         <div className="moreInfoLinks">
-          <h3>"Dormant Butt Syndrome" May Be To Blame for Knee, Hip and Back Pain</h3>
+          <h3>Hip hinging or “table” bending to spare your spine:</h3>
+        </div>
+      </a>
+      <a href={"https://www.npr.org/sections/goatsandsoda/2018/08/13/636025077/to-fix-that-pain-in-your-back-you-might-have-to-change-the-way-you-sit"} target="_blank">
+        <div className="moreInfoLinks">
+          <h3>Changing how we sit for decreased back pain:</h3>
         </div>
       </a>
       </div>
