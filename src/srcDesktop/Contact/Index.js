@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { withRouter, Redirect } from "react-router-dom";
 import Loader from "react-loader-spinner";
 
-var baseURL = "https://saveaway401k.herokuapp.com/";
-
 export default class Contact extends React.Component {
   state = {
     redirect: false,
@@ -60,9 +58,6 @@ export default class Contact extends React.Component {
       });
   };
   render() {
-    if (this.state.redirect === true) {
-      return <Redirect to="/Guide" />;
-    }
     return (
       <div>
         <h2> Please feel free to call me at: +1 (440) 213-0909</h2>
