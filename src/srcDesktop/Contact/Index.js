@@ -22,41 +22,29 @@ export default class Contact extends React.Component {
     };
   };
 
-  addBasicInfo = event => {
-    const { history } = this.props;
-    this.setState({ isLoading: true });
-    event.preventDefault();
-    console.log(this.getBasicInfo(event));
-    fetch("https://degrandis-pt.herokuapp.com/contact", {
-      method: "post",
-      body: JSON.stringify(this.getBasicInfo(event)),
-      headers: new Headers({
-        "Content-Type": "application/json"
-      })
+  sendMessage = event => {
+  fetch("https://dpt-email-server.herokuapp.com/contact", {
+    method: "post",
+    body: JSON.stringify(this.getBasicInfo(event)),
+    headers: new Headers({
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json"
     })
-      .then(resp => resp.json())
-      .then(resp => {
-        this.response = resp.message;
-      })
-      .then(
-        setTimeout(() => {
-          this.setState({
-            message: "Information Sent!",
-            isLoading: false
-          });
-        }, 1000)
-      )
-      .then(
-        setTimeout(() => {
-          this.setState({
-            redirect: true
-          });
-        }, 3000)
-      )
-      .catch(error => {
-        console.log(error);
-      });
-  };
+  })
+    .then(resp => resp.json())
+    .then(resp => {
+      this.response = resp.message;
+    })
+    .then(
+      setTimeout(() => {
+        this.setState({
+          message: "Information Sent!",
+          isLoading: false
+        });
+      }, 1000)
+    );
+};
+
   render() {
     return (
       <div>
@@ -64,7 +52,7 @@ export default class Contact extends React.Component {
         <h2> Or email me at: chrisdegrandispt@gmail.com</h2>
         <h2> Or submit your message below</h2>
         <div id="contactForm">
-          <form className="signupForm" onSubmit={this.addBasicInfo}>
+          <form className="signupForm" onSubmit={this.sendMessage}>
             <label htmlFor="signupFName">First</label>
             <input className="formInput" type="text" name="signupFName" />
             <label htmlFor="signupLName">Last</label>
